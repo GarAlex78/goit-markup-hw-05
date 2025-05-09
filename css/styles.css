@@ -653,11 +653,18 @@ img {
 /* .check:checked + .svg-item-check {
   fill: #fff;
 } */
-input[type='checkbox']:checked + .modal-checkbox-span {
-  border: none;
-  background-color: var(--pressed-state-color);
-  fill: #fff;
+input[type='checkbox']:checked + span.modal-checkbox-span {
+  background-color: #404bbf;
 }
+
+input[type='checkbox']:checked + span.modal-checkbox-span {
+  border: none;
+}
+
+input[type='checkbox']:checked + span.modal-checkbox-span {
+  fill: #f4f4fd;
+}
+
 .modal-checkbox {
   /* display: flex; */
   font-size: 12px;
