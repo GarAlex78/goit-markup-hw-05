@@ -653,15 +653,15 @@ img {
 /* .check:checked + .svg-item-check {
   fill: #fff;
 } */
-input:checked + span.modal-checkbox-span {
+.check:checked + .modal-checkbox > span {
   background-color: #404bbf;
 }
 
-input:checked + span.modal-checkbox-span {
+.check:checked + .modal-checkbox > span  {
   border: none;
 }
 
-input:checked + span.modal-checkbox-span {
+.check:checked + .modal-checkbox > span  {
   fill: #f4f4fd;
 }
 
