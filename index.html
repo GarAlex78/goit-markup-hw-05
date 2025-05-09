@@ -560,7 +560,7 @@
             </label>
             <!-- <div class="footer-btr-wrap"> -->
             <button class="footer-submit-btn" type="submit">
-              Submit
+              Subscribe
               <svg class="svg-footer-btn" width="24" height="24">
                 <use href="./images/icons.svg#icon-Frame"></use>
               </svg>
@@ -583,15 +583,10 @@
         <!-- form in modal -->
         <form name="modal-form" class="modal-form">
           <div class="wrap-input">
-            <label class="modal-label" for="modal-user-name">Name</label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="modal-input">
-              <input
-                type="text"
-                id="modal-user-name"
-                name="user-name"
-                autofocus
-              />
-              <svg class="svg-item-modal" width="24" height="24">
+              <input type="text" id="user-name" name="user-name" autofocus />
+              <svg class="svg-item-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
@@ -600,7 +595,7 @@
             <label class="modal-label" for="modal-user-phone">Phone</label>
             <div class="modal-input">
               <input type="tel" id="modal-user-phone" name="user-phone" />
-              <svg class="svg-item-modal" width="24" height="24">
+              <svg class="svg-item-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
@@ -609,45 +604,47 @@
             <label class="modal-label" for="modal-user-email">Email</label>
             <div class="modal-input">
               <input type="email" id="modal-user-email" name="user-email" />
-              <svg class="svg-item-modal" width="24" height="24">
+              <svg class="svg-item-modal" width="18" height="24">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-          <div class="wrap-input">
-            <label class="modal-label" for="modal-area">Comment</label>
+          <div class="wrap-input wrp-area">
+            <label class="modal-label" for="user-comment">Comment</label>
 
-            <div class="modal-input">
-              <textarea
-                class="modal-texrarea"
-                id="modal-area"
-                name="story"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <!-- <div class="modal-input"> -->
+            <textarea
+              class="input-area"
+              class="modal-texrarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+            <!-- </div> -->
           </div>
           <div class="modal-checkbox-wrap">
             <input
-              class="check"
+              class="check visually-hidden"
               type="checkbox"
-              id="modal-checkbox"
-              name="checkbox-privacy"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
             />
-            <label class="modal-checkbox" for="modal-checkbox">
+            <label class="modal-checkbox" for="user-privacy">
               <span class="modal-checkbox-span">
                 <svg class="svg-item-check" width="12" height="12">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              <p class="modal-checkbox-text">
-                I accept the terms and conditions of the
-              </p>
+              <!-- <p class="modal-checkbox-text"> -->
+              I accept the terms and conditions of the
+              <!-- </p> -->
               <a class="modal-checkbox-link" href="./index.html"
                 >Privacy Policy</a
               >
             </label>
           </div>
-          <button class="baner_btn" type="submit">Send</button>
+          <button class="baner_btn footer-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
