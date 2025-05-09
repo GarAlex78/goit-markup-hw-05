@@ -647,10 +647,11 @@ img {
   height: 16px;
   cursor: pointer;
 }
-.check:checked + .svg-item-check {
+
+/* .check:checked + .svg-item-check {
   fill: #fff;
-}
-.check:checked + .modal-checkbox-span {
+} */
+input[type='checkbox']:checked + span {
   border: none;
   background-color: var(--pressed-state-color);
   fill: #fff;
