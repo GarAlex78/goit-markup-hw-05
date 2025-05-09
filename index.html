@@ -71,7 +71,9 @@
           <h1 class="baner_title title-center">
             Effective Solutions for Your Business
           </h1>
-          <button class="baner_btn" type="button">Order Service</button>
+          <button class="baner_btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion main banner -->
@@ -502,7 +504,7 @@
     <footer class="footer">
       <div class="container footer-list">
         <!-- <div class="footer-list"> -->
-        <div class="footer-item">
+        <div class="footer-item-one">
           <a class="logo footer_logo" href="./index.html" target="_blank">
             Web<span class="logo_span">Studio</span></a
           >
@@ -511,7 +513,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-item">
+        <div class="footer-item-two">
           <p class="footer-item-title">Social media</p>
           <ul class="footer-svg-list">
             <li class="footer-svg-item">
@@ -544,8 +546,111 @@
             </li>
           </ul>
         </div>
+        <div class="footer-item-three">
+          <p class="footer-item-title">Subscribe</p>
+          <form class="footer-form" action="">
+            <label class="footer-subscribe-label" for="footer-subscribe">
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="footer-email"
+                id="footer-subscribe"
+                placeholder="E-mail"
+              />
+            </label>
+            <!-- <div class="footer-btr-wrap"> -->
+            <button class="footer-submit-btn" type="submit">
+              <p>Submit</p>
+              <svg class="svg-footer-btn" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+            <!-- </div> -->
+          </form>
+        </div>
         <!-- </div> -->
       </div>
     </footer>
+    <!-- backdrop -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="button-close-modal" type="button" data-modal-close>
+          <svg class="svg-item-close-modal" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <!-- form in modal -->
+        <form action="">
+          <div class="wrap-input">
+            <label class="modal-label" for="modal-user-name">Name</label>
+            <div class="modal-input">
+              <input
+                type="text"
+                id="modal-user-name"
+                name="user-name"
+                autofocus
+              />
+              <svg class="svg-item-modal" width="24" height="24">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap-input">
+            <label class="modal-label" for="modal-user-phone">Phone</label>
+            <div class="modal-input">
+              <input type="tel" id="modal-user-phone" name="user-phone" />
+              <svg class="svg-item-modal" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap-input">
+            <label class="modal-label" for="modal-user-email">Email</label>
+            <div class="modal-input">
+              <input type="email" id="modal-user-email" name="user-email" />
+              <svg class="svg-item-modal" width="24" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap-input">
+            <label class="modal-label" for="modal-area">Comment</label>
+
+            <div class="modal-input">
+              <textarea
+                class="modal-texrarea"
+                id="modal-area"
+                name="story"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-checkbox-wrap">
+            <input
+              class="check"
+              type="checkbox"
+              id="modal-checkbox"
+              name="checkbox-privacy"
+            />
+            <label class="modal-checkbox" for="modal-checkbox">
+              <span class="modal-checkbox-span">
+                <svg class="svg-item-check" width="12" height="12">
+                  <use href="./images/icons.svg#icon-Vector"></use>
+                </svg>
+              </span>
+              <p class="modal-checkbox-text">
+                I accept the terms and conditions of the
+              </p>
+              <a class="modal-checkbox-link" href="./index.html"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button class="baner_btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
